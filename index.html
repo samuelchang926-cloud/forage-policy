@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forage — Privacy Policy</title>
+<meta name="description" content="How the Forage Chrome extension handles your data: it runs entirely in your browser, has no servers, and sends nothing to its developer.">
+<style>
+  /* No web fonts or other outside requests: a privacy policy that pinged a
+     third party on load would be a poor start. */
+  :root {
+    --bg: #F4EFE6; --paper: #FBF8F2; --ink: #2B2620; --muted: #6B6257;
+    --line: #D9D1C3; --amber: #9A6A18;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1E1B17; --paper: #26221D; --ink: #F1EBE0; --muted: #B3A99A;
+            --line: #3E382F; --amber: #E0A94A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.65 Georgia, "Iowan Old Style", "Palatino Linotype", serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 28px;
+           font-size: 22px; letter-spacing: -0.01em; }
+  .brand svg { flex-shrink: 0; }
+  h1 { font-size: 40px; line-height: 1.1; font-weight: 500; margin: 0 0 8px; }
+  .dates { color: var(--muted); font: 14px/1.5 system-ui, sans-serif; margin: 0 0 32px; }
+  h2 { font-size: 24px; font-weight: 500; margin: 40px 0 10px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  .summary { background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
+             padding: 20px 24px; margin: 0 0 8px; }
+  .summary p:last-child { margin: 0; }
+  table { width: 100%; border-collapse: collapse; font: 15px/1.5 system-ui, sans-serif;
+          margin: 8px 0 12px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0;
+           border-top: 1px solid var(--line); }
+  th { font-weight: 600; white-space: nowrap; }
+  code { font: 14px ui-monospace, Menlo, Consolas, monospace; }
+  a { color: var(--amber); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+           color: var(--muted); font: 14px/1.5 system-ui, sans-serif; }
+  @media (max-width: 520px) { h1 { font-size: 32px; } th { white-space: normal; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand" aria-label="Forage">
+    <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,3.8 90,26.9 90,73.1 50,96.2 10,73.1 10,26.9" fill="#C0841F" stroke="#C0841F" stroke-width="6" stroke-linejoin="round"/>
+    </svg>
+    <span>forage</span>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="dates">Effective 26 September 2026 · Applies to the Forage extension for Google Chrome</p>
+
+  <div class="summary">
+    <p><strong>The short version.</strong> Forage runs entirely inside your own browser. It has no servers, no user accounts and no analytics. It never sends your spreadsheets, your order information or anything else to its developer or to anyone else. The only websites it contacts are the two vendor portals it reads — Four Hands and Leftbank Art — using the sign-in you already have there.</p>
+  </div>
+
+  <h2>What Forage is</h2>
+  <p>Forage is a Chrome extension for interior designers. You give it your project spreadsheet (an FF&amp;E or procurement schedule); it checks the vendor portals you are already signed in to, and shows which items have shipped, been delayed or been cancelled, compared with what your spreadsheet says. It can also produce an updated copy of your spreadsheet for you to download.</p>
+
+  <h2>What Forage reads</h2>
+  <ul>
+    <li><strong>The spreadsheet you choose.</strong> When you pick a file, Forage reads it inside your browser. The file is never uploaded anywhere.</li>
+    <li><strong>Your orders at Four Hands and Leftbank Art.</strong> Forage asks <code>fourhands.com</code> and <code>www.leftbankart.com</code> for your account's order information — order numbers, product codes, item descriptions, quantities, order status, and ship and arrival dates. It does this with the sign-in you have already established in Chrome; Forage never sees or stores your password. To look up particular orders, it sends those vendors order numbers taken from your spreadsheet — numbers the vendor issued to you in the first place.</li>
+    <li><strong>What it ignores.</strong> Four Hands' order report also contains the delivery address and phone number for each order. Forage discards those fields as it reads the report; they are never displayed, saved or included in any download.</li>
+  </ul>
+  <p>Forage does not read any other website, your browsing history, your bookmarks, other tabs, or your email.</p>
+
+  <h2>What Forage saves, and where</h2>
+  <p>So that each check of a project can tell you what changed since the last one, Forage keeps a short record of the most recent check of each project: the project name you typed, and for each item its name, room, vendor, order number and product code, the status and estimated arrival date the vendor reported, and when it was checked.</p>
+  <ul>
+    <li>This record is stored in Chrome's local extension storage, <strong>on your computer only</strong>. It is not synced to your Google account and is not sent anywhere.</li>
+    <li>Only the latest check of each project is kept. Beyond 100 projects, the oldest is deleted automatically.</li>
+    <li>You can delete all of it at any time with <strong>Clear saved history</strong> at the bottom of the Forage panel. Removing the extension from Chrome also deletes it.</li>
+  </ul>
+  <p>Forage stores nothing else. Your spreadsheet itself is not kept once the panel is closed.</p>
+
+  <h2>Downloads</h2>
+  <p>When you choose <strong>Download sheet</strong>, Forage creates a spreadsheet in your browser and hands it to Chrome to save where you choose. What happens to that file afterwards is up to you.</p>
+
+  <h2>Sample data</h2>
+  <p>The <strong>Try it with sample data</strong> button runs Forage on an invented project with invented orders. It contacts no website and saves nothing.</p>
+
+  <h2>What Forage never does</h2>
+  <ul>
+    <li>It does not send any data to its developer. There is no Forage server.</li>
+    <li>It does not sell, rent or share data with anyone, for any purpose.</li>
+    <li>It does not use analytics, tracking, advertising or crash-reporting services.</li>
+    <li>It does not store or have access to your passwords.</li>
+    <li>It does not load or run code from the internet; everything it runs is included in the extension as reviewed by the Chrome Web Store.</li>
+    <li>It does not use your data for anything other than showing you the status of your own orders.</li>
+  </ul>
+
+  <h2>Permissions, and why each is needed</h2>
+  <table>
+    <tr><th>Side panel</th><td>Shows Forage in Chrome's side panel, next to the page you are working on.</td></tr>
+    <tr><th>Storage</th><td>Keeps the record of each project's last check on your computer, as described above.</td></tr>
+    <tr><th>fourhands.com</th><td>Reads your Four Hands order report and, for orders it doesn't cover, individual order details.</td></tr>
+    <tr><th>www.leftbankart.com</th><td>Reads the Leftbank Art orders listed in your spreadsheet.</td></tr>
+  </table>
+
+  <h2>Chrome Web Store User Data Policy</h2>
+  <p>Forage's use of the information described here complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide Forage's single purpose — showing interior designers the current status of their orders — and is not transferred to anyone.</p>
+
+  <h2>Children</h2>
+  <p>Forage is a business tool for design professionals. It is not directed at children and does not knowingly handle information about children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If Forage ever changes what it reads, saves or sends — for example, if a future version checks a licence key online — this policy will be updated to say exactly what is involved <em>before</em> that version is released, and the effective date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or about your data: <a href="mailto:foragestudio.app@gmail.com">foragestudio.app@gmail.com</a>.</p>
+
+  <footer>Forage is an independent product and is not affiliated with Four Hands, Leftbank Art or Google.</footer>
+</main>
+</body>
+</html>
