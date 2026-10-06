@@ -53,7 +53,7 @@
   </div>
 
   <h1>Privacy Policy</h1>
-  <p class="dates">Effective 26 September 2026 · Applies to the Forage extension for Google Chrome</p>
+  <p class="dates">Effective 26 September 2026 · Last updated 4 October 2026 · Applies to the Forage extension for Google Chrome</p>
 
   <div class="summary">
     <p><strong>The short version.</strong> Forage runs entirely inside your own browser. It has no servers, no user accounts and no analytics. It never sends your spreadsheets, your order information or anything else to its developer or to anyone else. The only websites it contacts are the two vendor portals it reads — Four Hands and Leftbank Art — using the sign-in you already have there.</p>
@@ -71,19 +71,24 @@
   <p>Forage does not read any other website, your browsing history, your bookmarks, other tabs, or your email.</p>
 
   <h2>What Forage saves, and where</h2>
-  <p>So that each check of a project can tell you what changed since the last one, Forage keeps a short record of the most recent check of each project: the project name you typed, and for each item its name, room, vendor, order number and product code, the status and estimated arrival date the vendor reported, and when it was checked.</p>
+  <p>So that Forage can list your projects and tell you what changed since the last check, it keeps a short record of each project:</p>
   <ul>
-    <li>This record is stored in Chrome's local extension storage, <strong>on your computer only</strong>. It is not synced to your Google account and is not sent anywhere.</li>
-    <li>Only the latest check of each project is kept. Beyond 100 projects, the oldest is deleted automatically.</li>
-    <li>You can delete all of it at any time with <strong>Clear saved history</strong> at the bottom of the Forage panel. Removing the extension from Chrome also deletes it.</li>
+    <li><strong>The project itself:</strong> the name you gave it, when you created it and last checked it, how many items it had, how many needed your attention, and how many were at each stage (ordered, shipped and so on).</li>
+    <li><strong>Its most recent check:</strong> for each item its name, room, vendor, order number and product code, the status and estimated arrival date the vendor reported, and when it was checked. Forage also uses this to recognise which project a spreadsheet belongs to when you load it.</li>
+  </ul>
+  <p>So that it only has to ask once how to read your spreadsheets, Forage also keeps your <strong>setup</strong>, once you confirm it: the column names of each spreadsheet layout and which column holds what; what your own status words mean; which vendor each vendor name on your sheets refers to; and whether your spreadsheet goes back into a board or app. Setup holds no item, order or client details. <strong>Reset setup</strong> in the panel's settings deletes it; Clear saved history does not.</p>
+  <ul>
+    <li>All of this is stored in Chrome's local extension storage, <strong>on your computer only</strong>. It is not synced to your Google account and is not sent anywhere.</li>
+    <li>Only the latest check of each project is kept. Beyond 100 projects, the one checked longest ago is deleted automatically.</li>
+    <li>You can delete your projects and their checks at any time with <strong>Clear saved history</strong>, and your setup with <strong>Reset setup</strong>, both in the Forage panel's settings. Removing the extension from Chrome deletes all of it.</li>
   </ul>
   <p>Forage stores nothing else. Your spreadsheet itself is not kept once the panel is closed.</p>
 
   <h2>Downloads</h2>
-  <p>When you choose <strong>Download sheet</strong>, Forage creates a spreadsheet in your browser and hands it to Chrome to save where you choose. What happens to that file afterwards is up to you.</p>
+  <p>When you choose <strong>Download updated sheet</strong>, Forage creates a spreadsheet in your browser and hands it to Chrome to save where you choose. What happens to that file afterwards is up to you.</p>
 
   <h2>Sample data</h2>
-  <p>The <strong>Try it with sample data</strong> button runs Forage on an invented project with invented orders. It contacts no website and saves nothing.</p>
+  <p>The <strong>Try sample data</strong> button runs Forage on an invented project with invented orders. It contacts no website and saves nothing.</p>
 
   <h2>What Forage never does</h2>
   <ul>
@@ -91,14 +96,14 @@
     <li>It does not sell, rent or share data with anyone, for any purpose.</li>
     <li>It does not use analytics, tracking, advertising or crash-reporting services.</li>
     <li>It does not store or have access to your passwords.</li>
-    <li>It does not load or run code from the internet; everything it runs is included in the extension as reviewed by the Chrome Web Store.</li>
+    <li>It does not load or run code from the internet; everything it runs, including the fonts its panel uses, is included in the extension as reviewed by the Chrome Web Store.</li>
     <li>It does not use your data for anything other than showing you the status of your own orders.</li>
   </ul>
 
   <h2>Permissions, and why each is needed</h2>
   <table>
     <tr><th>Side panel</th><td>Shows Forage in Chrome's side panel, next to the page you are working on.</td></tr>
-    <tr><th>Storage</th><td>Keeps the record of each project's last check on your computer, as described above.</td></tr>
+    <tr><th>Storage</th><td>Keeps your projects, each one's last check, and your setup on your computer, as described above.</td></tr>
     <tr><th>fourhands.com</th><td>Reads your Four Hands order report and, for orders it doesn't cover, individual order details.</td></tr>
     <tr><th>www.leftbankart.com</th><td>Reads the Leftbank Art orders listed in your spreadsheet.</td></tr>
   </table>
