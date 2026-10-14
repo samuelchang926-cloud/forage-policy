@@ -53,10 +53,10 @@
   </div>
 
   <h1>Privacy Policy</h1>
-  <p class="dates">Effective 26 September 2026 · Last updated 4 October 2026 · Applies to the Forage extension for Google Chrome</p>
+  <p class="dates">Effective 26 September 2026 · Last updated 13 October 2026 · Applies to the Forage extension for Google Chrome</p>
 
   <div class="summary">
-    <p><strong>The short version.</strong> Forage runs entirely inside your own browser. It has no servers, no user accounts and no analytics. It never sends your spreadsheets, your order information or anything else to its developer or to anyone else. The only websites it contacts are the two vendor portals it reads — Four Hands and Leftbank Art — using the sign-in you already have there.</p>
+    <p><strong>The short version.</strong> Forage runs entirely inside your own browser. It has no servers, no user accounts and no analytics. It never sends your spreadsheets, your order information or anything else to its developer or to anyone else. The only websites it contacts are the three vendor portals it reads — Four Hands, Leftbank Art and Visual Comfort — using the sign-in you already have there.</p>
   </div>
 
   <h2>What Forage is</h2>
@@ -66,9 +66,10 @@
   <ul>
     <li><strong>The spreadsheet you choose.</strong> When you pick a file, Forage reads it inside your browser. The file is never uploaded anywhere.</li>
     <li><strong>Your orders at Four Hands and Leftbank Art.</strong> Forage asks <code>fourhands.com</code> and <code>www.leftbankart.com</code> for your account's order information — order numbers, product codes, item descriptions, quantities, order status, and ship and arrival dates. It does this with the sign-in you have already established in Chrome; Forage never sees or stores your password. To look up particular orders, it sends those vendors order numbers taken from your spreadsheet — numbers the vendor issued to you in the first place.</li>
-    <li><strong>What it ignores.</strong> Four Hands' order report also contains the delivery address and phone number for each order. Forage discards those fields as it reads the report; they are never displayed, saved or included in any download.</li>
+    <li><strong>Your orders at Visual Comfort.</strong> Visual Comfort's order pages only fill in their details once they are open in a browser tab, so Forage reads them that way. For each Visual Comfort order number in your spreadsheet, Forage opens that order's page on <code>www.visualcomfort.com</code> in a background tab of your own browser, signed in as you already are, waits for the page to show its product table, reads only that table (product name, item code, quantities ordered and shipped, status, estimated ship date and tracking), and then closes the tab. It opens one order at a time and only when you start a check. Nothing it reads is sent anywhere.</li>
+    <li><strong>What it ignores.</strong> Four Hands' order report also contains the delivery address and phone number for each order. Forage discards those fields as it reads the report; they are never displayed, saved or included in any download. Visual Comfort's order pages also show shipping and billing addresses; Forage never reads them.</li>
   </ul>
-  <p>Forage does not read any other website, your browsing history, your bookmarks, other tabs, or your email.</p>
+  <p>Forage does not read any other website, your browsing history, your bookmarks, your other tabs, or your email. The only tabs it reads are the Visual Comfort order pages it opens and closes itself, as described above.</p>
 
   <h2>What Forage saves, and where</h2>
   <p>So that Forage can list your projects and tell you what changed since the last check, it keeps a short record of each project:</p>
@@ -106,6 +107,8 @@
     <tr><th>Storage</th><td>Keeps your projects, each one's last check, and your setup on your computer, as described above.</td></tr>
     <tr><th>fourhands.com</th><td>Reads your Four Hands order report and, for orders it doesn't cover, individual order details.</td></tr>
     <tr><th>www.leftbankart.com</th><td>Reads the Leftbank Art orders listed in your spreadsheet.</td></tr>
+    <tr><th>www.visualcomfort.com</th><td>Opens the Visual Comfort orders listed in your spreadsheet in a background tab, reads each one's product table, and closes the tab.</td></tr>
+    <tr><th>Scripting</th><td>Lets Forage read the product table on the Visual Comfort order pages it opened. The code it runs there is part of Forage itself; it reads the table and changes nothing on the page. Forage runs it on no other site and no other tab.</td></tr>
   </table>
 
   <h2>Chrome Web Store User Data Policy</h2>
@@ -120,7 +123,7 @@
   <h2>Contact</h2>
   <p>Questions about this policy or about your data: <a href="mailto:foragestudio.app@gmail.com">foragestudio.app@gmail.com</a>.</p>
 
-  <footer>Forage is an independent product and is not affiliated with Four Hands, Leftbank Art or Google.</footer>
+  <footer>Forage is an independent product and is not affiliated with Four Hands, Leftbank Art, Visual Comfort or Google.</footer>
 </main>
 </body>
 </html>
